@@ -2,7 +2,7 @@ package kata
 
 import "fmt"
 
-func RoundRGB(v int) int {
+func roundRGB(v int) int {
 	switch {
 	case v < 0:
 		return 0
@@ -14,5 +14,5 @@ func RoundRGB(v int) int {
 }
 
 func RGB(r, g, b int) string {
-	return fmt.Sprintf("%02X%02X%02X", RoundRGB(r), RoundRGB(g), RoundRGB(b))
+	return fmt.Sprintf("%02X%02X%02X", roundRGB(r), roundRGB(g), roundRGB(b))
 }
